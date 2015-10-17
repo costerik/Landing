@@ -1,0 +1,343 @@
+/**
+ *  Fonts
+ */
+
+@font-face {
+    font-family:"Brandon-Grotesque-Regular";
+    src: url('<%='Brandon_reg-webfont.eot'%>');
+    src: url('<%='Brandon_reg-webfont.eot?#iefix'%>') format('embedded-opentype'),
+         url('<%='Brandon_reg-webfont.woff2'%>') format('woff2'),
+         url('<%='Brandon_reg-webfont.woff'%>') format('woff'),
+         url('<%='Brandon_reg-webfont.ttf'%>') format('truetype'),
+         url('<%='Brandon_reg-webfont.svg#brandon_grotesque_regularRg'%>') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
+    font-family:'Brandon-Grotesque-Regular';
+    src: url(font-path('Brandon_reg-webfont.eot'));
+    src: url(font-path('Brandon_reg-webfont.eot')+'?#iefix') format('embedded-opentype'),
+         url(font-path('Brandon_reg-webfont.woff2')) format('woff2'),
+         url(font-path('Brandon_reg-webfont.woff')) format('woff'),
+         url(font-path('Brandon_reg-webfont.ttf')) format('truetype'),
+         url(font-path('Brandon_reg-webfont.svg')+'#brandon_grotesque_regularRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
+/**
+ * Generic rules
+ */
+
+  body{
+    font-family:"Open Sans", Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+  }
+
+  header{
+    background-color: #9F0101;
+    height: 6rem;
+  }
+
+  header h1{
+    margin: 0px 0px;
+  }
+
+  header h1 a{
+  background: url('<%= asset_path("logo-244x80-px.png") %> ') no-repeat;
+  display:block;
+  background-size: cover;
+  height: 80px;
+  margin:0 auto;
+  outline:none;
+  text-indent:-9999px;
+  width: 244px;
+  float: left;
+  }
+
+  h2{
+    display: none;
+  }
+
+  /*#spotlight{
+    background: url(../img/baner1.png) no-repeat center top;
+    display: block;
+    background-size: cover;
+    margin:0 auto;
+    height: 400px;
+    width: 1400px;
+  }*/
+  
+  h3,label,p{
+      font-family: 'Brandon-Grotesque-Regular';
+  }
+
+  #information h3{
+    font-size: 2rem;
+  }
+
+  #information p{
+    text-align: justify;
+    font-size: 1rem;
+  }
+
+  #error_explanation{
+    border: 2px solid red;
+    border-radius: 3rem;
+    text-align: center;
+    color: red;
+    font-size: 1rem;
+    width: 18rem;
+  }
+
+  input[type^="text"]{
+    width: 18rem;
+  }
+
+  #formulario p:last-child{
+    padding-top: 1rem;
+  }
+
+  #footer{
+    background-color: #9F0101;
+  }
+
+  footer p{
+    color: #B6B6B6;
+    font-size:0.875em;
+    text-align:center;
+  }
+
+  footer ul{
+    margin:1.000em 0;
+    padding:0;
+  }
+
+  footer ul li{
+    list-style-type:none;
+    text-align:center;
+  }
+
+  footer ul li a{
+    color:#EB6D4C;
+    font-size:0.875em;
+    text-decoration:none;
+  }
+
+  footer .social{
+    text-align:center;
+  }
+
+  footer .social li{
+    display:inline-block;
+  }
+
+  footer .social li a{
+    display:block;
+    height:2.000rem;
+    outline:0;
+    text-indent:-9999px;
+    width:2.000rem;
+  }
+
+  footer .social li a.facebook{
+    background: url('<%= asset_path('icono-facebook.png')%>') no-repeat;
+  }
+
+  footer .social li a.twitter{
+    background: url('<%= asset_path('icono-twitter.png')%>') no-repeat;
+  }
+
+  input.button{
+      font-family: 'Brandon-Grotesque-Regular';
+      cursor:pointer; /*forces the cursor to change to a hand when the button is hovered*/
+      padding:5px 25px; /*add some padding to the inside of the button*/
+      background:#9F0101; /*the colour of the button*/
+      border:1px solid #810000; /*required or the default border for the browser will appear*/
+      /*give the button curved corners, alter the size as required*/
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      border-radius: 10px;
+      /*give the button a drop shadow*/
+      -webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+      -moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+      box-shadow: 0 0 4px rgba(0,0,0, .75);
+      /*style the text*/
+      color:#f3f3f3;
+      font-size:1.1em;
+      width: 18rem;
+      }
+/***NOW STYLE THE BUTTON'S HOVER AND FOCUS STATES***/
+  input.button:hover, input.button:focus{
+    background-color :#809999; /*make the background a little darker*/
+    /*reduce the drop shadow size to give a pushed button effect*/
+    -webkit-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 0 1px rgba(0,0,0, .75);
+    box-shadow: 0 0 1px rgba(0,0,0, .75);
+  }
+  
+  /* Prevent the slideshow from flashing on load */
+  #slides {
+    display: none
+  }
+
+  .alert-box{
+    background:rgba(159,1,1,0.5);
+    border-radius: 3rem;
+    height: 1.5rem;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+    width: 18rem;
+  }
+
+  .cell{
+    display: table-cell;
+    width: 50%;
+  }
+
+  .cell p{
+    margin: 0 0;
+    padding-right: 1rem;
+  }
+
+  .center-padding-left{
+    padding-left: 10rem;
+  }
+
+  .table{
+    display: table
+  }
+
+  /* Center the slideshow */
+  .container {
+    margin: 0 auto
+  }
+
+  .slidesjs-navigation {
+      margin-top:3px;
+  }
+
+  .slidesjs-previous {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-next {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 6px 0 0;
+      float: right;
+      list-style: none;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url('<%= asset_path('pagination.png')%>');
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    a:link,
+    a:visited {
+      color: #333
+    }
+
+    a:hover,
+    a:active {
+      color: #9e2020
+    }
+
+  /* Media quires for a responsive layout */
+
+  /* For tablets & smart phones */
+  @media (max-width: 767px) {
+    body {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    header{
+      height: 4rem;
+    }
+
+    header h1 a{
+    background: url('<%= asset_path('logo-240x60-px.png')%>') no-repeat;
+    display:block;
+    background-size: cover;
+    height: 60px;
+    margin:0 auto;
+    outline:none;
+    text-indent:-9999px;
+    width: 240px;
+    }
+
+    .container {
+      width: auto;
+    }
+  }
+
+  /* For smartphones */
+  @media (max-width: 480px) {
+    .container {
+      width: auto;
+    }
+
+    .cell{
+    display: inline-block;
+    width: 100%
+    }
+
+    .cell p{
+    margin: 0 0;
+    padding-right: 1rem;
+    }
+
+    .center-padding-left{
+      padding-left: 0rem;
+    }
+
+    .table{
+      display: block;
+    }
+  }
+
+  /* For smaller displays like laptops */
+  @media (min-width: 768px) and (max-width: 979px) {
+    .container {
+      width: auto;
+    }
+  }
+
+  /* For larger displays */
+  @media (min-width: 1200px) {
+    .container {
+      width: 80%;
+    }
+  }
+
+ 
