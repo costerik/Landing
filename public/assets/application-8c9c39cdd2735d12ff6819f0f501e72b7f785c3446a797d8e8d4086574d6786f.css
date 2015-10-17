@@ -433,12 +433,12 @@ th {
 
 @font-face {
     font-family:"Brandon-Grotesque-Regular";
-    src: url('Brandon_reg-webfont.eot');
-    src: url('Brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Brandon_reg-webfont.woff2') format('woff2'),
-         url('Brandon_reg-webfont.woff') format('woff'),
-         url('Brandon_reg-webfont.ttf') format('truetype'),
-         url('Brandon_reg-webfont.svg#brandon_grotesque_regularRg') format('svg');
+    src: url('/assets/Brandon_reg-webfont-cc36128d789fe46ca7d3b41cecbd239b2fc273953f4aa9de1c0dd1dc0cf03fe1.eot');
+    src: url('/assets/Brandon_reg-webfont-cc36128d789fe46ca7d3b41cecbd239b2fc273953f4aa9de1c0dd1dc0cf03fe1.eot?#iefix') format('embedded-opentype'),
+         url('/assets/Brandon_reg-webfont-026be55767d95d1d33a12762e4a7d8c86fb179c203fc6af2900cf57cdbcae6b8.woff2') format('woff2'),
+         url('/assets/Brandon_reg-webfont-64fe8a073cd760b34d50c1a85269991ba32bc70ad4bc59486d66f3de231525d0.woff') format('woff'),
+         url('/assets/Brandon_reg-webfont-56ec58fb9063bf9eb51470f17e26732fe52b3aecdbc25291a96228edce676a40.ttf') format('truetype'),
+         url('/assets/Brandon_reg-webfont-e5db68964a336f57d7f24a57fce974c26bf511e1f4a246474bd1e3aff4c2bef9.svg#brandon_grotesque_regularRg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -491,7 +491,7 @@ th {
   }
 
   /*#spotlight{
-    background: url(../img/baner1.png) no-repeat center top;
+    background: url(../img/baner1.png) no-re: ;peat center top;
     display: block;
     background-size: cover;
     margin:0 auto;
@@ -577,6 +577,10 @@ th {
 
   footer .social li a.twitter{
     background: url('/assets/icono-twitter-7cb6b84a975fd1e9c13afcedbab9c94fb0465b27b58f8cfdaca5c4180ae20876.png') no-repeat;
+  }
+
+  footer .social li a.instagram{
+    background: url('/assets/icono-instagram-6e2887663bbdb37a2771e3e26206ba37d2c8ba02b75cad2ecbaaab42e6b03bc2.png') no-repeat;
   }
 
   input.button{
